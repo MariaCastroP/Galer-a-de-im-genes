@@ -12,10 +12,10 @@ imagenes = {
     "tigresdelnorte": "imagenes/Tulum.jpg",
     "elsueloeslava": "imagenes/Cozumel.jpg",
     "kayak": "imagenes/Merida.jpg"
-    #  10 imágenes
+    #10 imágenes
 }
 
-print("BUSCADOR DE IMÁGENES")
+print("BUSCADOR DE IMAGENES")
 nombre = input("Escribe el nombre de la imagen: ")
 
 if nombre in imagenes:
