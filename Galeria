@@ -15,11 +15,11 @@ imagenes = {
     #  10 imágenes
 }
 
-print("📷 BUSCADOR DE IMÁGENES")
+print("BUSCADOR DE IMÁGENES")
 nombre = input("Escribe el nombre de la imagen: ")
 
 if nombre in imagenes:
     imagen = Image.open(imagenes[nombre])
     imagen.show()
 else:
-    print("❌ Imagen no encontrada.")
+    print("Imagen no encontrada.")
