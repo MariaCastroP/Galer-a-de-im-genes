@@ -1,0 +1,25 @@
+from PIL import Image
+
+# Diccionario: nombre -> ruta de la imagen
+imagenes = {
+    "Maria": "imagenes/Hugo.jpg",
+    "Rocas": "imagenes/Paco.jpg",
+    "vida": "imagenes/Luis.jpg",
+    "elsolseestaocultando": "imagenes/Cancun.jpg",
+    "conejoenlaluna": "imagenes/PuertoVallarta.jpg",
+    "aliababua": "imagenes/Acapulco.jpg",
+    "sand": "imagenes/PlayaDelCarmen.jpg",
+    "tigresdelnorte": "imagenes/Tulum.jpg",
+    "elsueloeslava": "imagenes/Cozumel.jpg",
+    "kayak": "imagenes/Merida.jpg"
+    #  10 imágenes
+}
+
+print("📷 BUSCADOR DE IMÁGENES")
+nombre = input("Escribe el nombre de la imagen: ")
+
+if nombre in imagenes:
+    imagen = Image.open(imagenes[nombre])
+    imagen.show()
+else:
+    print("❌ Imagen no encontrada.")
